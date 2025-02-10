@@ -3,6 +3,7 @@ import Image from "next/image";
 import FuzzieLogo from "../../../public/fuzzieLogo.png";
 import Link from "next/link";
 import { MenuIcon } from "lucide-react";
+import { UserButton } from "@clerk/nextjs";
 
 type Props = {};
 
@@ -52,6 +53,7 @@ const navbar = async (props: Props) => {
                     </button>
                 </Link>
                 {/* // WIP: Wire up user */}
+                <UserButton />
                 <MenuIcon className="md:hidden" />
             </aside>
         </header>
